@@ -1,0 +1,63 @@
+body {
+    font-family: calibri;
+    background-color: #535353;
+    color: #333;
+    margin:0;
+    padding:0;
+}
+
+/* Barre de navigation */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #b8b9ac;
+}
+
+/* titre - étudiante en informatique */
+h1 {
+    font-size: 2.5em;
+    color: #b1afaf;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 0.25px;
+}
+
+/* Contenu principal */
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+main p {
+    font-size: 2rem;
+    color: #868585;
+}
+
+/* Pour l'ancre "projets" */
+#Projets {
+    margin-top: 10rem;
+}
+
+#txt {
+    font-family: calibri;
+    text-align: centre;
+
+}
