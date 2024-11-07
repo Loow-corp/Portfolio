@@ -1,63 +1,112 @@
+/* Styles globaux */
 body {
-    font-family: calibri;
-    background-color: #535353;
-    color: #333;
-    margin:0;
-    padding:0;
+  font-family: Calibri;
+  color: #333;
+  background-color: #d3c7c1;
+  background: #a3a3a3;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
 }
 
 /* Barre de navigation */
 nav {
-    background-color: #333;
-    padding: 10px 0;
-    text-align: center;
-}
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-nav a:hover {
-    color: #b8b9ac;
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
 }
 
-/* titre - étudiante en informatique */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #b8b9ac;
+}
+
+/* Titre principal */
 h1 {
-    font-size: 2.5em;
-    color: #b1afaf;
+  font-size: 2.5em;
+  color: #333;
+  text-align: center;
+  margin: 30px 0;
+  font-weight: bold;
+  letter-spacing: 0.25px;
+}
+/* Titre de la page */
+.page-title {
+    font-size: 2rem;
+    color: #333;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-weight: bold;
-    letter-spacing: 0.25px;
+    margin: 20px 0;
 }
 
 /* Contenu principal */
-main {
-    padding: 2rem;
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Message temporaire */
+.no-content-message {
+    background-color: #ffd1d1;
+    border: 1px solid #ff8585;
+    color: #b30000;
+    padding: 15px;
+    border-radius: 8px;
     text-align: center;
+    margin-bottom: 20px;
+    max-width: 600px;
 }
 
-main p {
-    font-size: 2rem;
-    color: #868585;
+/* Galerie de projets */
+.project-gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
 }
 
-/* Pour l'ancre "projets" */
-#Projets {
-    margin-top: 10rem;
+/* Vignette de projet */
+.project-tile {
+    width: 250px;
+    height: 150px;
+    background-color: #f3f6fc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: solid 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#txt {
-    font-family: calibri;
-    text-align: centre;
+.project-tile:hover {
+    background-color: #d1d2d3;
+    transform: translateY(-5px);
+}
 
+/* Contenu de la vignette */
+.project-content h2 {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
 }
